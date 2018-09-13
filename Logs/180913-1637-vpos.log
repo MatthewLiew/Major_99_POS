@@ -1,0 +1,84 @@
+Sep 13, 2018 4:37:33 PM uk.chromis.pos.forms.StartPOS main
+INFO: Directory: C:\Users\admin\Documents\POS\Major 99 POS
+Sep 13, 2018 4:37:33 PM uk.chromis.pos.forms.AppConfig <init>
+INFO: Reading configuration file: C:\Users\admin\Documents\POS\Major 99 POS\chromispos.properties
+Sep 13, 2018 4:37:37 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SET storage_engine=INNODB
+Sep 13, 2018 4:37:38 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT VERSION FROM APPLICATIONS WHERE ID = ?
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SET storage_engine=INNODB
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT VERSION FROM APPLICATIONS WHERE ID = ?
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: DELETE FROM DRAWEROPENED WHERE {fn TIMESTAMPDIFF(SQL_TSI_MINUTE, OPENDATE, CURRENT_TIMESTAMP)} > 7
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM CENTRALSERVER 
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:39 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT HOST, HOSTSEQUENCE, DATESTART, DATEEND, NOSALES FROM CLOSEDCASH WHERE MONEY = '9a2f5c83-b1e9-4fe2-8d83-9d30d7be4ee2'
+Sep 13, 2018 4:37:40 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: UPDATE RESOURCES SET NAME = ?, RESTYPE = ?, CONTENT = ? WHERE NAME = ?
+Sep 13, 2018 4:37:41 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:41 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT NAME FROM LOCATIONS WHERE ID = '0'
+Sep 13, 2018 4:37:41 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, APPPASSWORD, CARD, ROLE, IMAGE FROM PEOPLE P JOIN SITEGUID S ON P.SITEGUID = S.GUID WHERE S.GUID = P.SITEGUID AND VISIBLE = TRUE ORDER BY NAME
+Sep 13, 2018 4:37:41 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:47 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:47 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT PERMISSIONS FROM ROLES WHERE ID = ? AND SITEGUID= ? 
+Sep 13, 2018 4:37:47 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SET storage_engine=INNODB
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM CENTRALSERVER 
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT COUNT(*) FROM XSITELIST 
+Sep 13, 2018 4:37:48 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, IMAGE FROM FLOORS ORDER BY NAME
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, X, Y, FLOOR, CUSTOMER, WAITER, TICKETID, TABLEMOVED FROM PLACES ORDER BY FLOOR
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT CONTENT FROM RESOURCES R JOIN SITEGUID S ON R.SITEGUID = S.GUID  WHERE NAME = ? AND S.GUID = R.SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT GUID FROM SITEGUID 
+Sep 13, 2018 4:37:49 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, CATEGORY, CUSTCATEGORY, PARENTID, RATE, RATECASCADE, RATEORDER, SITEGUID FROM TAXES WHERE SITEGUID = 'e57e47e5-c2ca-4f6a-8674-03167c1398e8' ORDER BY NAME
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME FROM TAXCATEGORIES WHERE SITEGUID = 'e57e47e5-c2ca-4f6a-8674-03167c1398e8' ORDER BY NAME
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, CONTENT, PICKUPID FROM SHAREDTICKETS ORDER BY ID
+Sep 13, 2018 4:37:50 PM uk.chromis.pos.sales.JPanelTicket executeEvent
+INFO: null
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, CATEGORY, CUSTCATEGORY, PARENTID, RATE, RATECASCADE, RATEORDER, SITEGUID FROM TAXES WHERE SITEGUID = 'e57e47e5-c2ca-4f6a-8674-03167c1398e8' ORDER BY NAME
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT ID, NAME, IMAGE, TEXTTIP, CATSHOWNAME, COLOUR, CATORDER FROM CATEGORIES WHERE SITEGUID = ? AND PARENTID IS NULL AND CATSHOWNAME = TRUE ORDER BY NAME
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT ID, NAME, IMAGE, TEXTTIP, CATSHOWNAME, COLOUR, CATORDER FROM CATEGORIES WHERE SITEGUID = ? AND PARENTID = ? ORDER BY NAME
+Sep 13, 2018 4:37:50 PM uk.chromis.data.loader.PreparedSentence openExec
+INFO: Executing prepared SQL: SELECT P.ID, P.REFERENCE, P.CODE, P.CODETYPE, P.NAME, P.ISCOM, P.ISSCALE, P.PRICEBUY, P.PRICESELL, P.COMMISSION, P.CATEGORY, P.TAXCAT, P.ATTRIBUTESET_ID, P.IMAGE, P.ATTRIBUTES, P.STOCKCOST, P.STOCKVOLUME, P.ISCATALOG, P.CATORDER, P.ISKITCHEN, P.ISSERVICE, P.DISPLAY, P.ISVPRICE, P.ISVERPATRIB, P.TEXTTIP, P.WARRANTY, P.STOCKUNITS, P.ALIAS, P.ALWAYSAVAILABLE, P.DISCOUNTED, P.CANDISCOUNT, P.ISPACK, P.PACKQUANTITY, P.PACKPRODUCT, P.PROMOTIONID, P.MANAGESTOCK, P.SUPPLIER, P.SITEGUID FROM PRODUCTS P WHERE P.SITEGUID = ? AND (P.ISCATALOG = TRUE AND P.CATEGORY = ?) OR (P.ALWAYSAVAILABLE = TRUE) ORDER BY P.CATORDER, P.NAME 
+Sep 13, 2018 4:37:53 PM uk.chromis.pos.sales.JPanelTicket executeEvent
+INFO: null
+Sep 13, 2018 4:38:19 PM uk.chromis.data.loader.StaticSentence openExec
+INFO: Executing static SQL: SELECT ID, NAME, APPPASSWORD, CARD, ROLE, IMAGE FROM PEOPLE P JOIN SITEGUID S ON P.SITEGUID = S.GUID WHERE S.GUID = P.SITEGUID AND VISIBLE = TRUE ORDER BY NAME
